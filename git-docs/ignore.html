@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html><head>
+  <meta charset='utf-8'>
+  <title>git: Ignoring Files</title>
+  <link rel='stylesheet' type='text/css' href='git-docs.css' />
+</head><body>
+
+    <h1>Telling git to ignore certain file types</h1>
+
+    <p>You can create a file of globs (command line file patterns),
+      and git will ignore any files with names matching any of those
+      globs. There are a number of places this file can
+      be placed:</p>
+
+    <ul>
+      <li><tt>.../.git/info/exclude</tt>
+      <li><tt>.gitignore</tt>
+    </ul>
+
+    <p>Place the glob expressions one per line in the file. Lines
+    beginning with a hash (#) will be ignored as comments. The
+    following would cause git to ignore files ending in .o, .a, and
+    ~:</p>
+
+    <pre>
+      *.[oa]
+      *~
+    </pre>
+
+</body></html>
